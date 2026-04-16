@@ -3,6 +3,8 @@
  * Dans ce fichier, je vais créer les routes pour la page 'accueil.ejs'
  */
 
-const express = require('express');
-
-const router = express.Router();
+module.exports = {
+    accueilView:(req, res) => {
+        res.render('accueil');
+    }
+};
