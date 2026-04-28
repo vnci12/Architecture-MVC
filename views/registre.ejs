@@ -6,6 +6,27 @@
     <title>Registre</title>
 </head>
 <body>
+    <%- include('navbar') %>
     <h1>Page de Registration</h1>
+    <form action="/registre" method="POST">
+        <div class="container">
+            <h3>S'enregistrer</h3>
+            <p>Veuillez compléter tous les chanps</p>
+
+            <hr><!--insérer une ligne horizontale-->
+            <!--Le champ de saisie pour l'email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!--Le champ de saisie pour le mot de passe-->
+            <label for="motdepasse">Mot de passe:</label>
+            <input type="password" id="motdepasse" name="motdepasse" required><br><br>
+            
+            <!--Le bouton pour soumettre le formulaire-->
+            <button type="submit">S'inscrire</button>
+        </div>
+    </form>
+        
 </body>
+<link rel="stylesheet" href="navbar.css">
 </html>

@@ -9,7 +9,7 @@ const router = express.Router();
 const accueilController = require('../contrellers/accueilContreller');
 
 //je crée une route pour la page d'accueil exemple : 3009
-router.get("/accueil", accueilController.accueilView);
+router.get("/", accueilController.accueilView);
 
 
 module.exports = router;

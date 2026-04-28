@@ -16,5 +16,5 @@ const numeroPort = 3000;
 
 //je fais écouter le serveur sur le port 3000
 server.listen(numeroPort, () => {
-    console.log(`Le serveur est à l\'écoute sur le port, numeroPort`);
+    console.log(`Le serveur est à l\'écoute sur le port, ${numeroPort}`);
 });
